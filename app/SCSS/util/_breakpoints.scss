@@ -1,0 +1,13 @@
+// mobile = 700px and below, tablet = 701px to 900px, desktop = 901 -1400px, large desktop = 1401px and above
+
+$breakpoints-up: (
+    "medium": 43.75em,
+    "large": 56.25em,
+    "xlarge": 75em,
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size ) ) {
+        @content;
+    }
+}
