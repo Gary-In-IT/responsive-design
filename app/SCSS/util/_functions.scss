@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+@function rem($pixel){
+
+     @if unitless($pixel) {           
+        @return math.div($pixel, 16) + rem;
+    }
+
+    @else{       
+        @error "Please pass a number without a rem unit";
+    }    
+}
+
+
+@function em($pixel){
+
+    @if unitless($pixel) {           
+       @return math.div($pixel, 16) + em;
+   }
+
+   @else{       
+       @error "Please pass a number without an em unit";
+   }    
+}
