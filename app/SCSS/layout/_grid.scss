@@ -1,5 +1,6 @@
 @use "../util" as u;
 
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -26,7 +27,7 @@
     }
 
     @include u.breakpoint(large) {
-      background-color: hsl(119, 53%, 58%);
+      background-color: hsl(251, 53%, 58%);
     }
   }
 
@@ -39,7 +40,8 @@
 
   &__widget {
 
-    background-color: hsl(275, 100%, 25%);
+    padding: u.rem(16);    
+    
   }
 
 }

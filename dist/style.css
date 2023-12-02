@@ -49,6 +49,14 @@ a:active {
   --text-color: hsl(0, 0%, 100%);
 }
 
+.blue {
+  background-color: hsl(275, 100%, 25%);
+}
+
+.green {
+  background-color: hsl(119, 88%, 35%);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -76,7 +84,7 @@ a:active {
 }
 @media (min-width: 56.25em) {
   .grid__main {
-    background-color: hsl(119, 53%, 58%);
+    background-color: hsl(251, 53%, 58%);
   }
 }
 @media (max-width: 56.24875em) {
@@ -85,5 +93,5 @@ a:active {
   }
 }
 .grid__widget {
-  background-color: hsl(275, 100%, 25%);
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
