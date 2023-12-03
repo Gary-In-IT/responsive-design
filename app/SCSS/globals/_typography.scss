@@ -3,30 +3,34 @@
 h1,
 h2,
 h3 {
-    font-weight: 700;
-    line-height: 1.1;
-    margin-top: 0;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
 }
 
 // control font size with clamp, keeps font size from getting too big or too small (min, preferred, max)
 h1 {
-//    font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
-    font-size: clamp(u.rem(28), u.rem(16), u.rem(40));
-
+  font-size: 2.625rem;
+  font-size: clamp(u.rem(40), 1.77rem + 3.63vw, u.rem(72));
 }
 
 h2 {
-    // font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
-    font-size: clamp(u.rem(22), u.rem(14), u.rem(36));
+  font-size: u.rem(36);
+  font-size: clamp(u.rem(36), 1.91rem + 1.45vw, u.rem(48));
+}
+
+h3 {
+  font-size: u.rem(24);
+  font-size: clamp(u.rem(24), 1.41rem + 0.91vw, u.rem(36));
 }
 
 p {
-    margin-top: 0;
-    font-size: u.rem(16);
+  margin-top: 0;
+  font-size: u.rem(16);
 }
 
 a,
 a:visited,
-a:active {    
-    text-decoration: none;
+a:active {
+  text-decoration: none;
 }
