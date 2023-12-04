@@ -1,0 +1,26 @@
+@use "../util" as u;
+
+.hero {
+  background-color: var(--header-bg);
+
+
+
+  &__wrapper {
+  }
+
+  &__image {
+  }
+
+  &__text {
+  }
+
+  &__title {
+    color: var(--text-light);
+  }
+
+  &__content {
+  }
+
+  &__button {
+  }
+}

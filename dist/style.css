@@ -164,4 +164,11 @@ a:active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
+}
+
+.hero {
+  background-color: var(--header-bg);
+}
+.hero__title {
+  color: var(--text-light);
 }/*# sourceMappingURL=style.css.map */
