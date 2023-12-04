@@ -25,6 +25,14 @@ body {
   height: 1px;
   overflow: hidden;
 }
+.visually-hidden:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid;
+}
 
 h1,
 h2,
