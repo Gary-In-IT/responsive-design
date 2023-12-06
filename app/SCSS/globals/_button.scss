@@ -1,0 +1,24 @@
+@use '../util' as u;
+
+.button {
+    display: inline-block;
+    font-size: u.rem(18);
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: u.rem(10) u.rem(14);
+    border-radius: u.rem(24);
+
+    &.primary {
+        background-color: var(--button-primary-bg);
+        color: var(--button-primary-text);
+        border: u.rem(2) solid var(--button-primary-bg);
+    }
+
+    &.secondary {
+        background-color: var(--button-secondary-bg);
+        color: var(--button-secondary-text);
+        border: u.rem(2) solid var(--button-secondary-border);
+    }
+}

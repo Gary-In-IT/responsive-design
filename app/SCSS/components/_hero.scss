@@ -21,6 +21,7 @@
   }
 
   &__text {
+    
   }
 
   &__title {
@@ -30,5 +31,9 @@
   }
 
   &__button {
+
+    &:first-of-type {
+      margin-inline-end: 20px;
+    }
   }
 }

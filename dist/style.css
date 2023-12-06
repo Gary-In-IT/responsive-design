@@ -118,6 +118,27 @@ a:active {
   background-color: hsl(119, 88%, 35%);
 }
 
+.button {
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.625rem 0.875rem;
+  border-radius: 1.5rem;
+}
+.button.primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: 0.125rem solid var(--button-primary-bg);
+}
+.button.secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: 0.125rem solid var(--button-secondary-border);
+}
+
 .wrapper {
   width: min(100% - 3rem, 75rem);
   margin-inline: auto;
@@ -196,4 +217,7 @@ a:active {
   width: 62%;
   max-width: 30.1875rem;
   margin-block-end: 2.5rem;
+}
+.hero__button:first-of-type {
+  margin-inline-end: 20px;
 }/*# sourceMappingURL=style.css.map */
