@@ -2,20 +2,28 @@
 
 .hero {
   background-color: var(--header-bg);
-
-
+  color: var(--text-light);
 
   &__wrapper {
+    padding-block: 30px 60px;
+
+    @include u.breakpoint(large) {
+      padding-block: 40px 80px;
+    }
+
+    
   }
 
   &__image {
+    width: 62%;
+    max-width: u.rem(483);
+    margin-block-end: u.rem(40);
   }
 
   &__text {
   }
 
   &__title {
-    color: var(--text-light);
   }
 
   &__content {
