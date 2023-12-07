@@ -5,13 +5,14 @@
   color: var(--text-light);
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-block: 30px 60px;
 
     @include u.breakpoint(large) {
       padding-block: 40px 80px;
     }
-
-    
   }
 
   &__image {
@@ -21,7 +22,6 @@
   }
 
   &__text {
-    
   }
 
   &__title {
@@ -31,7 +31,6 @@
   }
 
   &__button {
-
     &:first-of-type {
       margin-inline-end: 20px;
     }

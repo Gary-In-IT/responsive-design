@@ -9,16 +9,29 @@
     text-transform: uppercase;
     padding: u.rem(10) u.rem(14);
     border-radius: u.rem(24);
+    transition-property: background-color, border, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 
     &.primary {
         background-color: var(--button-primary-bg);
         color: var(--button-primary-text);
         border: u.rem(2) solid var(--button-primary-bg);
+        
+        &:hover {
+            background-color: var(--button-primary-bg-hover);
+            border: u.rem(2) solid var(--button-primary-bg-hover);
+        }
     }
 
     &.secondary {
         background-color: var(--button-secondary-bg);
         color: var(--button-secondary-text);
         border: u.rem(2) solid var(--button-secondary-border);
+
+        &:hover {
+            background-color: var(--button-secondary-bg-hover);
+            color: var(--button-secondary-text-hover);
+        }
     }
 }

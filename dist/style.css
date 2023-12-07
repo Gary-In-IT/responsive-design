@@ -91,10 +91,13 @@ a:active {
   --header-bg: hsl(232, 58%, 55%);
   --hero-bg: hsl(232, 58%, 55%);
   --button-primary-bg: hsl(180, 100%, 42%);
+  --button-primary-bg-hover: hsl(180, 100%, 37%);
   --button-primary-text: hsl(233, 14%, 25%);
   --button-secondary-bg: transparent;
+  --button-secondary-bg-hover:hsl(0, 0%, 100%) ;
   --button-secondary-border: hsl(0, 0%, 100%);
   --button-secondary-text: hsl(0, 0%, 100%);
+  --button-secondary-text-hover: var(--hero-bg);
   --fullwidth-bg: hsl(320, 85%, 41%);
   --cta-desktop: linear-gradient(
     90deg,
@@ -127,16 +130,27 @@ a:active {
   text-transform: uppercase;
   padding: 0.625rem 0.875rem;
   border-radius: 1.5rem;
+  transition-property: background-color, border, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .button.primary {
   background-color: var(--button-primary-bg);
   color: var(--button-primary-text);
   border: 0.125rem solid var(--button-primary-bg);
 }
+.button.primary:hover {
+  background-color: var(--button-primary-bg-hover);
+  border: 0.125rem solid var(--button-primary-bg-hover);
+}
 .button.secondary {
   background-color: var(--button-secondary-bg);
   color: var(--button-secondary-text);
   border: 0.125rem solid var(--button-secondary-border);
+}
+.button.secondary:hover {
+  background-color: var(--button-secondary-bg-hover);
+  color: var(--button-secondary-text-hover);
 }
 
 .wrapper {
@@ -206,6 +220,9 @@ a:active {
   color: var(--text-light);
 }
 .hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-block: 30px 60px;
 }
 @media (min-width: 56.25em) {
