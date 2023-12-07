@@ -19,6 +19,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -223,17 +224,29 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
   padding-block: 30px 60px;
 }
 @media (min-width: 56.25em) {
   .hero__wrapper {
+    flex-direction: row-reverse;
     padding-block: 40px 80px;
+    gap: 10%;
   }
 }
 .hero__image {
   width: 62%;
   max-width: 30.1875rem;
-  margin-block-end: 2.5rem;
+}
+@media (min-width: 56.25em) {
+  .hero__image {
+    flex: 5;
+  }
+}
+@media (min-width: 56.25em) {
+  .hero__text {
+    flex: 6;
+  }
 }
 .hero__button:first-of-type {
   margin-inline-end: 20px;
