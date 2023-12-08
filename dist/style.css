@@ -235,7 +235,7 @@ a:active {
   }
 }
 .hero__image {
-  width: 62%;
+  width: 59%;
   max-width: 30.1875rem;
 }
 @media (min-width: 56.25em) {
