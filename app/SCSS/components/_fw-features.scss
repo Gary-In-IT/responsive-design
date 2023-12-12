@@ -1,0 +1,33 @@
+@use "../util" as u;
+
+
+
+.fw-feature {
+
+    background-color: var(--fullwidth-bg);
+    color: var(--text-light);
+    text-align: center;
+
+    &__wrapper {
+
+    }
+
+    &__description {
+
+        margin-block-end: u.rem(40);
+        max-width: 70ch;
+        margin-inline: auto;
+
+    }
+
+    &__image {
+
+        max-width: u.rem(792);
+        margin-inline: auto;
+
+    }
+
+    &__title {
+
+    }
+}
