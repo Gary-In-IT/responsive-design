@@ -7,30 +7,28 @@
   --button-primary-bg: hsl(180, 100%, 42%);
   --button-primary-bg-hover: hsl(180, 100%, 37%);
   --button-primary-text: hsl(233, 14%, 25%);
+  --button-primary-white-bg: hsl(0, 0%, 100%);
+  --button-primary-white-bg-hover: hsl(0, 0%, 90%);
   --button-secondary-bg: transparent;
-  --button-secondary-bg-hover:hsl(0, 0%, 100%) ;
+  --button-secondary-bg-hover:hsl(0, 0%, 100%);
   --button-secondary-border: hsl(0, 0%, 100%);
   --button-secondary-text: hsl(0, 0%, 100%);
   --button-secondary-text-hover: var(--hero-bg);
   --fullwidth-bg: hsl(320, 85%, 41%);
-  --cta-desktop: linear-gradient(
-    90deg,
-    hsl(233, 14%, 24%) 0%,
-    hsl(232, 58%, 55%) 54.34%,
-    hsl(180, 100%, 42%) 112%
-  );
-  --cta-mobile: linear-gradient(
-    90deg,
-    hsl(233, 14%, 24%) 0%,
-    hsl(232, 58%, 55%) 76.28%,
-    hsl(180, 100%, 42%) 152.28%
-  );
-}
+  --gradient1: hsl(233, 14%, 24%);
+  --gradient2: hsl(232, 58%, 55%);
+  --gradient3: hsl(180, 100%, 42%);
 
-.blue {
-  background-color: hsl(275, 100%, 25%);
-}
-
-.green {
-  background-color: hsl(119, 88%, 35%);
+  // --cta-desktop: linear-gradient(
+  //   90deg,
+  //   hsl(233, 14%, 24%) 0%,
+  //   hsl(232, 58%, 55%) 54.34%,
+  //   hsl(180, 100%, 42%) 112%
+  // );
+  // --cta-mobile: linear-gradient(
+  //   90deg,
+  //   hsl(233, 14%, 24%) 0%,
+  //   hsl(232, 58%, 55%) 76.28%,
+  //   hsl(180, 100%, 42%) 152.28%
+  // );
 }

@@ -1,0 +1,33 @@
+@use "../util" as u;
+
+.fw-cta {
+  background: linear-gradient(
+    90deg,
+    var(--gradient1) 0%,
+    var(--gradient2) 75%,
+    var(--gradient3) 150%
+  );
+  color: var(--text-light);
+
+  @include u.breakpoint(large) {
+    background: linear-gradient(
+      90deg,
+      var(--gradient1) 0%,
+      var(--gradient2) 55%,
+      var(--gradient3) 110%
+    );
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__button {
+  }
+}
