@@ -2,29 +2,47 @@
 
 .testimonial {
 
+  &__wrapper {
+    max-width: u.rem(800) ;
+  }
 
-    &__wrapper {
+  &__icon {
+    width: 16%;
+    max-width: u.rem(78);
+    margin-block-end: clamp(u.rem(20), 0.68rem + 2.42vw, u.rem(40));
+  }
+
+  &__quote {
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: clamp(u.rem(24), 1.16rem + 1.45vw, u.rem(36));
+    margin-block-end: u.rem(40);
+  }
+
+  &__author-wrapper {
+    display: inline-flex;
+    gap: 20px 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__author-caption {
+
+
+  }
+
+  &__author {
+    width: u.rem(120);
+    border-radius: 50%;
+  }
+
+  &__author-info {
+    margin-block-end: 0;
+
+    @include u.breakpoint-down(xsmall) {
+        text-align: center;
 
     }
-
-    &__icon {
-
-    }
-
-    &__quote {
-
-    }
-
-    &__author-wrapper {
-
-    }
-
-    &__author {
-
-    }
-
-    &__author-info {
-        
-    }
-
+  }
 }
