@@ -27,6 +27,14 @@ figure, blockquote {
   margin: 0;
 }
 
+header ul, footer ul {
+  margin: 0;
+  padding: 0;
+}
+header ul li, footer ul li {
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -190,8 +198,6 @@ a:active {
   }
 }
 .topnav__links {
-  padding: 0;
-  margin: 0;
   display: flex;
   gap: 20px;
 }
@@ -199,9 +205,6 @@ a:active {
   .topnav__links {
     gap: 40px;
   }
-}
-.topnav__item {
-  list-style-type: none;
 }
 .topnav__link {
   font-size: 0.875rem;
