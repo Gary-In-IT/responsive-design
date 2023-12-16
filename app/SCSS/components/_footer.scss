@@ -1,0 +1,53 @@
+@use "../util" as u;
+
+.footer {
+
+
+ &__wrapper{}
+
+ &__logo{
+    
+ }
+  
+ &__homelink{
+
+    display: block;
+    width: fit-content;
+ }
+
+ &__logo-image{
+    width: 8rem;
+    margin-block-end: u.rem(10);
+ }
+
+ &__copyrite{
+
+    line-height: 1;
+ }
+
+ &__column{}
+
+&__column-title{
+    font-size: u.rem(22);
+    line-height: 1.1;
+    margin-block-end: u.rem(18) ;
+}
+
+ &__links{}
+
+ &__link{
+    font-size: u.rem(18);
+    line-height: 1;
+    margin-block-end: u.rem(10);
+    color: var(--text-dark);
+    display: inline-block;
+ }
+
+ &__item{}
+
+
+
+
+
+
+}

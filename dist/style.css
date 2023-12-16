@@ -358,4 +358,29 @@ a:active {
 }
 .fw-cta__wrapper {
   text-align: center;
+}
+
+.footer__homelink {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer__logo-image {
+  width: 8rem;
+  margin-block-end: 0.625rem;
+}
+.footer__copyrite {
+  line-height: 1;
+}
+.footer__column-title {
+  font-size: 1.375rem;
+  line-height: 1.1;
+  margin-block-end: 1.125rem;
+}
+.footer__link {
+  font-size: 1.125rem;
+  line-height: 1;
+  margin-block-end: 0.625rem;
+  color: var(--text-dark);
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
